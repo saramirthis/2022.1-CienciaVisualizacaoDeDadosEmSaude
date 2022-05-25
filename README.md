@@ -1,7 +1,7 @@
-# Projeto 2 – Predizendo Prognóstico de Mortalidade com Dados Sintéticos
+# Arquivo README.md da raiz
 
 
-## Apresentação
+## EQUIPE MPSM
 
 
 
@@ -11,6 +11,3 @@ Nome                           | RA     | Especialização
 -------------------------------|--------|------------
 Matheus Papa de Almeida        | 183888 | Engenharia Agrícola
 Sara Mirthis Dantas dos Santos | 224018 | Aluna Especial - Engenharia Elétrica
-
-
-Para acessar o notebook do projeto, acesse: [Projeto 2 – Predizendo Prognóstico de Mortalidade com Dados Sintéticos](notebooks/CVDS_P2_prognostico_mortalidade.ipynb)
