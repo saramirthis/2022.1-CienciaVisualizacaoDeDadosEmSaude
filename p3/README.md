@@ -36,7 +36,7 @@ No primeiro passo, são utilizados como entrada os dados de sequências de amino
   <img src="https://dl.dropbox.com/s/1r4it20n6pvxmti/Figura1.png" alt="HRV_1" style="width:600px;">
   <figcaption align = "center">Figura 1 - Visão geral do método de análise de sequência. (A) Identificação das HVR nas sequências. (B) É feita uma rede para cada HVR, onde cada sequência é um nó, e um link conectando dois nós corresponde a um bloco de sequência compartilhado. (C) O conjunto de conexões de pares acima do limiar de ruído define uma rede complexa que representa eventos recentes de recombinação. (D) As comunidades são identificadas a partir de um modelo generativo probabilístico.</figcaption>
 </figure>
-
+<br><br>
 
 ## Dados usados como entrada
 
@@ -55,12 +55,13 @@ Como visto anteriormente, os autores do artigo utilizam um modelo de bloco estoc
   <figcaption align="center">Figura 2 - Configuração para uso do algoritmo k-means.</figcaption>
 </figure>
 
+<br><br>
 
 <figure align="center">
   <img src="https://dl.dropbox.com/s/5zysx5lx4eaqon3/Figura3.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 3 - Configuração da coluna de nós para uso do algoritmo k-means.</figcaption>
 </figure>
-
+<br><br>
 
 
 ## Resultados
@@ -71,8 +72,7 @@ Nesta seção, será analisada a comparação da clusterização obtida pelo art
   <img src="https://dl.dropbox.com/s/2x30khopei3sc1i/HVR_1.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 4 - Comparação de comunidades com a rede HVR 1. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
-
-
+<br><br>
 Comparando os resultados, é possível perceber que as comunidades detectadas pelos autores estão melhor separadas dentro da rede. Utilizando o k-means, as comunidades encontradas mostraram-se mais esparsas, com aparente diferença entre a quantidade de nós em cada uma delas, o que pode ser explicado pela utilização de diferentes algoritmos e softwares. A Figura 5 demonstra a comparação entre a detecção de comunidades feita por nós (Fig. 5A) e feita pelos autores (Fig. 5B) com o arquivo HVR_5.txt.
 
 
@@ -80,8 +80,7 @@ Comparando os resultados, é possível perceber que as comunidades detectadas pe
   <img src="https://dl.dropbox.com/s/00f431t4ufu5rcg/HVR_5.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 5 - Comparação de comunidades com a rede HVR 5. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
-
-
+<br><br>
 Analisando as comunidades da Figura 5, percebemos que assim como no caso anterior, as comunidades ficaram mais esparsas com a utilização do k-means, além de que no resultado original existem nós que não são interligados por arestas com nenhum outro nó, mas que foram categorizados nas nas comunidades 1 (azul) e 2 (verde). No entanto, é possível identificar semelhanças em algumas conexões e comunidades em ambas as redes. Na Figura 6, temos a detecção de comunidades para o arquivo HVR_6.txt, comparando o resultado obtido por nós (Fig. 6A) e pelos autores (Fig. 6B).
 
 
@@ -89,8 +88,7 @@ Analisando as comunidades da Figura 5, percebemos que assim como no caso anterio
   <img src="https://dl.dropbox.com/s/pn1s9cuabh7mv7f/HVR_6.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 6 - Comparação de comunidades com a rede HVR 6. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
-
-
+<br><br>
 Comparando os resultados para a sexta região altamente variável, concluímos que há uma semelhança em alguns pontos das redes analisadas, mas assim como nos exemplos anteriores, a rede gerada pelos autores apresenta comunidades melhor divididas e agrupadas, devido ao uso de um algoritmo mais apropriado para o problema. Na Figura 7 é mostrada a comparação das comunidades geradas por nós (Fig. 7A) e pelos autores (Fig. 7B) com o arquivo HVR_7.txt.
 
 
@@ -98,8 +96,7 @@ Comparando os resultados para a sexta região altamente variável, concluímos q
   <img src="https://dl.dropbox.com/s/ww2qopsuw8z0rhx/HVR_7.png" alt="HRV_1" style="width:600px;">
   <figcaption align="center">Figura  7 - Comparação de comunidades com a rede HVR 7. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
-
-
+<br><br>
 Avaliando os resultados da rede HVR 7 percebemos que, visualmente, as comunidades estão bem semelhantes, porém ainda foi possível notar algumas diferenças com a utilização do algoritmo de clusterização k-means.
 
 
