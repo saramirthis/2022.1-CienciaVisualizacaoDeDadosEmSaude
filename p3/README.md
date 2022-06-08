@@ -19,7 +19,7 @@ Larremore DB, Clauset A, Buckee CO (2013) A Network Approach to Analyzing Highly
 
 ## Resumo
 
-O artigo analisado utiliza como objeto de estudo os genes var do parasita da Malária Plasmodium falciparum, que devido à sua recombinação rápida e sua grande diversidade, não podem ser analisadas pelas ferramentas filogenéticas padrão. Para tanto, os autores utilizam técnicas de redes a fim de mapear as regiões altamente variáveis (do inglês highly variable regions, HVRs) provenientes das sequências de genes var. A partir das análises das redes complexas geradas, foi concluído que as restrições recombinacionais de algumas HVRs são correlacionadas, enquanto outras são independentes. Além disso, a estrutura dessas sequências permite que o parasita se diversifique rapidamente, evitando respostas imunes e contribuindo para manutenção da estrutura e da função do antígeno.
+O artigo analisado utiliza como objeto de estudo os genes *var* do parasita da Malária *Plasmodium falciparum*, que devido à sua recombinação rápida e sua grande diversidade, não podem ser analisadas pelas ferramentas filogenéticas padrão. Para tanto, os autores utilizam técnicas de redes a fim de mapear as regiões altamente variáveis (do inglês highly variable regions, HVRs) provenientes das sequências de genes var. A partir das análises das redes complexas geradas, foi concluído que as restrições recombinacionais de algumas HVRs são correlacionadas, enquanto outras são independentes. Além disso, a estrutura dessas sequências permite que o parasita se diversifique rapidamente, evitando respostas imunes e contribuindo para manutenção da estrutura e da função do antígeno.
 
 
 ## Descrição do experimento do artigo replicado
@@ -42,12 +42,12 @@ No primeiro passo, são utilizados como entrada os dados de sequências de amino
 
 Dataset                           | Endereço na Web                                                  | Resumo descritivo
 ----------------------------------|------------------------------------------------------------------|--------------------
-data_malaria_PLOSCompBiology_2013 | https://github.com/dblarremore/data_malaria_PLOSCompBiology_2013 | O dataset possui 9 arquivos utilizados para a criação das redes, derivados do mesmo conjunto de sequências genéticas de genes var do parasita da malária. Cada um deles está no formato .txt, contendo a lista de pares de vértices adjacentes. As colunas são separadas por vírgula e não possuem cabeçalho. 
+data_malaria_PLOSCompBiology_2013 | https://github.com/dblarremore/data_malaria_PLOSCompBiology_2013 | O dataset possui 9 arquivos utilizados para a criação das redes, derivados do mesmo conjunto de sequências genéticas de genes *var* do parasita da malária. Cada um deles está no formato .txt, contendo a lista de pares de vértices adjacentes. As colunas são separadas por vírgula e não possuem cabeçalho. 
 
 
 ## Método
 
-Como visto anteriormente, os autores do artigo utilizam um modelo de bloco estocástico com grau corrigido para a identificação das comunidades. Este modelo recebe uma rede não ponderada e não direcionada e o número k de comunidades. O valor de k escolhido pelos autores foi de 3. A fim de simplificar a análise, utilizamos outro método de detecção de comunidades, que permite a pré-definição do número de comunidades, de modo que os resultados originais e reproduzidos possam ser mais semelhantes. O algoritmo escolhido foi o de clusterização k-means (k-médias em português) do aplicativo “clusterMaker2” no Cytoscape, já que ele possibilita a partição dos dados em k clusters a partir da distância euclidiana entre os nós. Para isso, foram utilizadas 200 iterações a fim de obter a definição das comunidades. Entretanto, para que pudéssemos usá-lo, foi necessário adicionar uma nova coluna às redes, de modo que conseguíssemos selecionar o atributo de nó para o cluster no algoritmo, como mostrado na Figura 2. Isso foi feito duplicando a coluna de nós e a configurando como um atributo de nó (Fig. 3).
+Como visto anteriormente, os autores do artigo utilizam um modelo de bloco estocástico com grau corrigido para a identificação das comunidades. Este modelo recebe uma rede não ponderada e não direcionada e o número k de comunidades. O valor de k escolhido pelos autores foi de 3. A fim de simplificar a análise, utilizamos outro método de detecção de comunidades, que permite a pré-definição do número de comunidades, de modo que os resultados originais e reproduzidos possam ser mais semelhantes. O algoritmo escolhido foi o de clusterização *k-means* (k-médias em português) do aplicativo “clusterMaker2” no Cytoscape, já que ele possibilita a partição dos dados em k *clusters* a partir da distância euclidiana entre os nós. Para isso, foram utilizadas 200 iterações a fim de obter a definição das comunidades. Entretanto, para que pudéssemos usá-lo, foi necessário adicionar uma nova coluna às redes, de modo que conseguíssemos selecionar o atributo de nó para o *cluster* no algoritmo, como mostrado na Figura 2. Isso foi feito duplicando a coluna de nós e a configurando como um atributo de nó (Fig. 3).
 
 
 <figure align="center">
@@ -62,7 +62,7 @@ Como visto anteriormente, os autores do artigo utilizam um modelo de bloco estoc
 
 
 ## Resultados
-Nesta seção, será analisada a comparação da clusterização obtida pelo artigo original e a nossa reprodução simplificada, considerando apenas as redes de HVR 1, 5, 6 e 7. As HVR 8 e 9 não foram processadas por serem redes maiores e exigirem um maior processamento, já as 2, 3 e 4 foram consideradas bastante fragmentadas pelos próprios autores, não sendo possível confiar no resultado do algoritmo. A Figura 4 ilustra a detecção de comunidades para o arquivo HVR_1.txt feito por nós (Fig. 4A) e a detecção para esse mesmo arquivo feito pelos autores (Fig. 4B). As cores utilizadas nos nós dos clusters estão de acordo com o artigo, em que azul representa a comunidade 1, verde a 2 e vermelho a 3.
+Nesta seção, será analisada a comparação da clusterização obtida pelo artigo original e a nossa reprodução simplificada, considerando apenas as redes de HVR 1, 5, 6 e 7. As HVR 8 e 9 não foram processadas por serem redes maiores e exigirem um maior processamento, já as 2, 3 e 4 foram consideradas bastante fragmentadas pelos próprios autores, não sendo possível confiar no resultado do algoritmo. A Figura 4 ilustra a detecção de comunidades para o arquivo HVR_1.txt feito por nós (Fig. 4A) e a detecção para esse mesmo arquivo feito pelos autores (Fig. 4B). As cores utilizadas nos nós dos *clusters* estão de acordo com o artigo, em que azul representa a comunidade 1, verde a 2 e vermelho a 3.
 
 
 <figure align="center">
@@ -101,10 +101,10 @@ Avaliando os resultados da rede HVR 7 percebemos que, visualmente, as comunidade
 
 ## Conclusão
 
-A partir dos resultados obtidos, podemos afirmar que utilizando o algoritmo de clusterização k-means no Cytoscape não foi possível chegar ao mesmo resultado obtido pelos autores no experimento. Isso pode ser explicado pelo uso de outro algoritmo de detecção de comunidades, bem como a utilização de um software diferente para a geração e análise das redes.
+A partir dos resultados obtidos, podemos afirmar que utilizando o algoritmo de clusterização *k-means* no Cytoscape não foi possível chegar ao mesmo resultado obtido pelos autores no experimento. Isso pode ser explicado pelo uso de outro algoritmo de detecção de comunidades, bem como a utilização de um software diferente para a geração e análise das redes.
 
 ### Principais dificuldades encontradas
 
 Uma das principais dificuldades encontradas na execução deste trabalho foi a seleção de um artigo com experimentos que fossem compreendidos por nós, alunos fora da área da saúde.
-Também tivemos problemas em usar alguns algoritmos de detecção de comunidade no Cytoscape, como o de Markov (MCL) do aplicativo clusterMaker2, que não criou uma nova rede clusterizada, e o Edge Betweenness do CyFinder, que não conseguiu finalizar a análise para algumas redes testadas.
+Também tivemos problemas em usar alguns algoritmos de detecção de comunidade no Cytoscape, como o de Markov (MCL) do aplicativo "clusterMaker2", que não criou uma nova rede clusterizada, e o Edge Betweenness do CyFinder, que não conseguiu finalizar a análise para algumas redes testadas.
 Em relação ao artigo que reproduzimos (A Network Approach to Analyzing Highly Recombinant Malaria Parasite Genes), testamos a detecção da comunidade com o Edge Betweenness e o k-means, todavia, como o Edge Betweenness não permite a definição prévia da quantidade de comunidades que serão criadas, ele foi desconsiderado, já que os resultados ficaram muito distantes do esperado.

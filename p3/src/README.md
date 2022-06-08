@@ -1,0 +1,2 @@
+As redes foram clusterizadas utilizando o aplicativo do Cytoscape. Para informações sobre instalação, acessar o link https://cytoscape.org/download.html.
+Ao acessar o Cytoscape, ir na aba de `Apps` e `Apps Manager`, procurar o `clusterMaker2` e clicar na opção de instalação. O algoritmo k-means pode ser utilizado ao acessar a opção `K-Means cluster`, na aba `clusterMaker Cluster Attributes`.
