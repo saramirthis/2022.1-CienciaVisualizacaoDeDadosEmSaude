@@ -55,10 +55,12 @@ Como visto anteriormente, os autores do artigo utilizam um modelo de bloco estoc
   <figcaption align="center">Figura 2 - Configuração para uso do algoritmo k-means.</figcaption>
 </figure>
 
+
 <figure align="center">
   <img src="https://dl.dropbox.com/s/5zysx5lx4eaqon3/Figura3.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 3 - Configuração da coluna de nós para uso do algoritmo k-means.</figcaption>
 </figure>
+
 
 
 ## Resultados
@@ -69,6 +71,7 @@ Nesta seção, será analisada a comparação da clusterização obtida pelo art
   <img src="https://dl.dropbox.com/s/2x30khopei3sc1i/HVR_1.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 4 - Comparação de comunidades com a rede HVR 1. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
+
 
 Comparando os resultados, é possível perceber que as comunidades detectadas pelos autores estão melhor separadas dentro da rede. Utilizando o k-means, as comunidades encontradas mostraram-se mais esparsas, com aparente diferença entre a quantidade de nós em cada uma delas, o que pode ser explicado pela utilização de diferentes algoritmos e softwares. A Figura 5 demonstra a comparação entre a detecção de comunidades feita por nós (Fig. 5A) e feita pelos autores (Fig. 5B) com o arquivo HVR_5.txt.
 
@@ -86,6 +89,7 @@ Analisando as comunidades da Figura 5, percebemos que assim como no caso anterio
   <img src="https://dl.dropbox.com/s/pn1s9cuabh7mv7f/HVR_6.png" alt="HRV_1" style="width:800px;">
   <figcaption align="center">Figura 6 - Comparação de comunidades com a rede HVR 6. (A)  Resultado reproduzido. (B) Resultado original.</figcaption>
 </figure>
+
 
 Comparando os resultados para a sexta região altamente variável, concluímos que há uma semelhança em alguns pontos das redes analisadas, mas assim como nos exemplos anteriores, a rede gerada pelos autores apresenta comunidades melhor divididas e agrupadas, devido ao uso de um algoritmo mais apropriado para o problema. Na Figura 7 é mostrada a comparação das comunidades geradas por nós (Fig. 7A) e pelos autores (Fig. 7B) com o arquivo HVR_7.txt.
 
