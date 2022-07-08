@@ -13,4 +13,4 @@ Matheus Papa de Almeida        | 183888 | Engenharia Agrícola
 Sara Mirthis Dantas dos Santos | 224018 | Aluna Especial - Engenharia Elétrica
 
 
-Para acessar o notebook do projeto, acesse: [Projeto 4 – Classificação de lesões de substância branca no Lúpus](notebooks/CVDS_P4_lupus_neuroimagens.ipynb)
+Para acessar o notebook do projeto, acesse: [Projeto 4 – Classificação de lesões de substância branca no Lúpus](notebook/CVDS_P4_lupus_neuroimagens.ipynb)
